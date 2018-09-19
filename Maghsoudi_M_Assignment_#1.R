@@ -49,6 +49,7 @@ mean(subds2[1:6,3])
 ds2<-ifelse(test=is.na(ds2$Vcrime)==T,yes=NA,no=ds2$Vcrime)
 mean(ds2)
 
+#The bonus does not work
 mean(as.numeric(ds2),NA.RM=T)
 
 x<-c(5,10,15,20,25,30)
@@ -83,6 +84,8 @@ print(y)
 #read doc
 library(readr)
 Assignemt_1<-read_csv(file = "https://raw.githubusercontent.com/mattdemography/EDU_7043/master/Data/Assignment_1.csv")
+
+#None of this Works because of a misspelling
 names(Assignment_1)
 print(Assignment_1)
 summary(Assignment_1$Murder)
@@ -91,3 +94,6 @@ NewEngMurder<-subset(Assignment_1,State=="CT"|State=="ME"|State=="MA"|State=="NH
 summary(NewEngMurder)
 #bonus
 summary(Assignment_1$Vcrime)
+
+#I'm not too sure which one of these lines I was supposed to check. You repeat the same lines a few times.
+#100 out of 100
